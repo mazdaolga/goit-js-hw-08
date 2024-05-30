@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework 8</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/basicLightbox/5.0.4/basicLightbox.min.css">
+    <style>
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+    
+        .gallery-item {
+            flex-basis: calc(33.333% - 10px);
+            box-sizing: border-box;
+        }
+    
+        .gallery-link {
+            display: block;
+            overflow: hidden;
+        }
+    
+        .gallery-image {
+            display: block;
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s;
+        }
+    
+        .gallery-image:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <ul class="gallery"></ul>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/basicLightbox/5.0.4/basicLightbox.min.js"></script>
+<script src="./js/gallery.js" type="module"></script>
+</body>
+</html>
